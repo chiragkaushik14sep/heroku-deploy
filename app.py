@@ -4,8 +4,8 @@ import pickle
 from sklearn.linear_model import LinearRegression
 regressor = LinearRegression()
 app = Flask(__name__)
-model = pickle.load(open('model.pkl', 'rb'))
-print('model',model)
+# model = pickle.load(open('model.pkl', 'rb'))
+# print('model',model)
 
 @app.route('/')
 def home():
