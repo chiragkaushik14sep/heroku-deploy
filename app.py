@@ -1,7 +1,8 @@
 import numpy as np
 from flask import Flask, request, jsonify, render_template
 import pickle
-
+from sklearn.linear_model import LinearRegression
+regressor = LinearRegression()
 app = Flask(__name__)
 model = pickle.load(open('model.pkl', 'rb'))
 
